@@ -1,6 +1,11 @@
 // Requiring our models and passport as we've configured it
+
+//requires files from models folder
 var db = require("../models");
+
+// passport is middleware for node that is used for authentication
 var passport = require("../config/passport");
+
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
